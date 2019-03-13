@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class ManipularString {
 	public static void main(String[] args) {
 		
+		System.out.println("Insira uma palavra");
 		Scanner scan = new Scanner(System.in);
 		String palavra = scan.next();
 		palavra = palavra.toLowerCase();
@@ -56,8 +57,17 @@ public class ManipularString {
 		
 		//Se a string é um palíndromo ou não.
 		char invertido[] = palavra.toCharArray(); 
-		if palavara = invertido  
-
 		
+		String palindrome = "";
+		int meio = palavra.length() / 2;
+		for(int i=0; i<meio; i++) {
+			if(palavra.charAt(i) != palavra.charAt(palavra.length()-1 -i)){
+				palindrome = "Não é palindrome";
+			}else {
+				palindrome = "É palindrome";
+			}
+		}
+		System.out.println(palindrome);
+	
 	}
 }
