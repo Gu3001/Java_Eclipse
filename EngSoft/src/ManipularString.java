@@ -1,11 +1,11 @@
-//5) Faça um programa que, a partir de uma string digitada pelo usuário, imprima:
-//O número de caracteres da string.
-//A string com todas suas letras em maiúsculo.
-//O número de vogais da string.
-//Se a string digitada começa com “IF” (ignorando maiúsculas/minúsculas).
-//Se a string digitada termina com “PR” (ignorando maiúsculas/minúsculas).
-//O número de dígitos (0 a 9) da string.
-//Se a string é um palíndromo ou não
+//5) FaÃ§a um programa que, a partir de uma string digitada pelo usuÃ¡rio, imprima:
+//O nÃºmero de caracteres da string.
+//A string com todas suas letras em maiÃºsculo.
+//O nÃºmero de vogais da string.
+//Se a string digitada comeÃ§a com â€œIFâ€� (ignorando maiÃºsculas/minÃºsculas).
+//Se a string digitada termina com â€œPRâ€� (ignorando maiÃºsculas/minÃºsculas).
+//O nÃºmero de dÃ­gitos (0 a 9) da string.
+//Se a string Ã© um palÃ­ndromo ou nÃ£o
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -19,7 +19,7 @@ public class ManipularString {
 		palavra = palavra.toLowerCase();
 		
 		//tamanho da palavra
-		System.out.println("O tamanho da String é "+palavra.length());
+		System.out.println("O tamanho da String Ã© "+palavra.length());
 		//todas letras Maiusculas
 		System.out.println(palavra.toUpperCase());
 		//vogais----------------------------------------------------
@@ -33,10 +33,10 @@ public class ManipularString {
 			}
 		}
 		System.out.println("Tem "+contador+" vogais");
-		//Começa com IF
+		//ComeÃ§a com IF
 		
 		if(letras[0] == 'i' && letras[1] == 'f') {
-			System.out.println("Sim, começa com IF");
+			System.out.println("Sim, comeÃ§a com IF");
 		}
 		
 		//Termina com PR - arrumar utilizer length e length-1
@@ -44,7 +44,7 @@ public class ManipularString {
 			System.out.println("Sim, termina com PR");
 		}
 		
-		//O número de dígitos (0 a 9) da string.
+		//O nÃºmero de dÃ­gitos (0 a 9) da string.
 		int cont = 0;
 		for(int x=0; x<palavra.length();x++) {
 			 if(letras[x]=='0' || letras[x]=='1' || letras[x]=='2' || letras[x]=='3' ||
@@ -55,19 +55,28 @@ public class ManipularString {
 		 }
 		System.out.println("Existem "+cont+" numeros na String");
 		
-		//Se a string é um palíndromo ou não.
+		//Se a string Ã© um palÃ­ndromo ou nÃ£o.
 		char invertido[] = palavra.toCharArray(); 
 		
 		String palindrome = "";
 		int meio = palavra.length() / 2;
 		for(int i=0; i<meio; i++) {
 			if(palavra.charAt(i) != palavra.charAt(palavra.length()-1 -i)){
-				palindrome = "Não é palindrome";
+				palindrome = "Nao e palindrome";
 			}else {
-				palindrome = "É palindrome";
+				palindrome = "E palindrome";
 			}
 		}
 		System.out.println(palindrome);
+		
+		//--------------------------------------------------------------------------
+		String nome = "willian";
+		String nomeInvertido = "";
+		
+		for(int i = nome.length()-1; i>=0; i--) {
+			nomeInvertido += nome.charAt(i);
+		}
+		System.out.println(nomeInvertido);
 	
 	}
 }
