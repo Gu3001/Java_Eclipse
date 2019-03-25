@@ -21,7 +21,7 @@ public class Deletar {
 		Statement st = conn.createStatement();
 		
 		InputDeDados inserir = new InputDeDados();
-		String nomeExcluir = inserir.inserirNomes();
+		String nomeExcluir = inserir.inserirNome();
 		st.executeUpdate("DELETE FROM CLIENTE WHERE NOME = '"+nomeExcluir+"'");
 			
 	

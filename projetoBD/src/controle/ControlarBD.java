@@ -13,12 +13,12 @@ public static void main(String[] args) {
 		System.out
 		.println("\n\n### MENU DE OPCOES ###");
 		System.out.println("\n                =========================");
-		System.out.println("                  |    1 - Inserir        |");
-		System.out.println("                  |    2 - Selecionar Tudo|");
-		System.out.println("                  |    3 - Deletar        |");
-		System.out.println("                  |    4 - Alterar        |");
-		System.out.println("                  |    5 - Consultar      |");
-		System.out.println("                  |    0 - Sair           |");
+		System.out.println("                  |    1 - Inserir Cliente  |");
+		System.out.println("                  |    2 - Selecionar Tudo  |");
+		System.out.println("                  |    3 - Deletar Cliente  |");
+		System.out.println("                  |    4 - Alterar Cliente  |");
+		System.out.println("                  |    5 - Consultar Cliente|");
+		System.out.println("                  |    0 - Sair             |");
 		System.out.println("                  =========================\n");
 		System.out.println("Insira a opcao: ");
 		opcao = entrada.nextInt();
@@ -48,8 +48,13 @@ public static void main(String[] args) {
 				System.out.println("Saindo!");
 				break;
 			default:
-				System.out.println("Op√ß√£o Inv√°lida!");
+				System.out.println("OpÁ„o Invalida!");
 			}
 		}
 	}
 }
+//conection con = new ConnectionFactory().getConnection();
+//prepared
+//public Connection getConnection(throws SQLException) {
+//	return Driver
+//}

@@ -35,37 +35,12 @@ public class InputDeDados {
 	public String inserirResposta() {
 		String resposta = JOptionPane.showInputDialog("Quer inserir novamente? (S) para sim e (N) para não ");
 		resposta = resposta.toLowerCase();
-//		while(resposta.equals("s") || resposta != "n") {
-//			resposta = JOptionPane.showInputDialog("TENTE NOVAMENTE, Insira sua resposta: (S) para sim e (N) para não");
-//			resposta = resposta.toLowerCase();
-//		}
+
 		return resposta;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-//	String resposta = "s";
-//	while(resposta.equals("s")){
-//		
-//
-//		if (resposta.equals("n")){
-//			break;
-//		}
-//		String nome = JOptionPane.showInputDialog("Insira seu Nome");
-//		String rg = JOptionPane.showInputDialog("Insira o seu rg");
-//		String cpf = JOptionPane.showInputDialog("Insira o seu cpf");
-//		String telefone = JOptionPane.showInputDialog("Insira seu telefone");
-//		resposta = JOptionPane.showInputDialog("Insira sua resposta S ou N");
-//		
-//		
-//		
-//		st.executeUpdate("INSERT INTO CLIENTE(NOME,RG,CPF,TELEFONE) VALUES('"+nome+"','"+rg+"','"+cpf+"','"+telefone+"')");
+
+
+//duas entidades,uma classe para o banco 
 
 
 //	}
