@@ -7,15 +7,16 @@ public class InputDeDados {
 	public int rg;
 	public int cpf;
 	public int telefone;
+	public Cidade cidade;
 	
 	public String inserirNomeAntigo() {
 		String nomeAntigo = JOptionPane.showInputDialog("Insira o nome Antigo ");
 		return nomeAntigo;
 	}
 		
-	public String inserirNome() {
-		String nome = JOptionPane.showInputDialog("Insira seu Nome: ");
-		return nome;
+	public void GetInserirNome(int nome) {
+		this.nome = JOptionPane.showInputDialog("Insira seu Nome: ");
+//		return nome;
 	}
 	public int inserirRG() {
 		String rgString = JOptionPane.showInputDialog("Insira seu RG: ");
