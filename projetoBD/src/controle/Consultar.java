@@ -31,7 +31,7 @@ public class Consultar {
 				resultado += rs.getInt("cpf")+" TELEFONE: ";
 				resultado += rs.getInt("telefone")+" \n";
 			}
-			JOptionPane.showMessageDialog(null, resultado); //alterar.....
+			JOptionPane.showMessageDialog(null, resultado);
 			
 		}catch(Exception e) {
 			e.printStackTrace();
