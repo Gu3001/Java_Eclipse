@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmls:th="http://thymeleaf.org"
+	xmls:layout="http://www.ultraq.net/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title>Analisar sala</title>
+</head>
+<body>
+	<h1>Analisar sala</h1>
+	<form method="post" action="analisar">
+		<input type="text" name="nome"/>
+		<button type="submit">Verificar</button>
+	</form>
+	</br>
+	</br>
+	<p>O resultado é:
+	<span th:text="${resultado}"></span>
+	</p>
+</body>
